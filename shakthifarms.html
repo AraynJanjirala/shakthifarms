@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shakti Farms | Hydroponic, Pesticide‑Free Vegetables – Moinabad, Hyderabad</title>
+  <meta name="description" content="Shakti Farms is a hydroponic farm in Moinabad, Hyderabad delivering fresh, pesticide‑free vegetables and greens. Healthy produce, sustainable methods, and transparent farm‑to‑home." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7f9;
+      --surface:#ffffff;
+      --ink:#181a1f;
+      --muted:#5b6068;
+      --brand:#2f9e44;          /* primary green */
+      --brand-2:#0077cc;        /* accent blue */
+      --accent:#25d366;         /* WhatsApp CTA */
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --radius-lg:26px;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(180deg,#f8fafc, var(--bg));font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+
+    /* Header / Nav */
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid #e9ecef}
+    .nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-logo{width:100px;height:100px;border-radius:50px;box-shadow:var(--shadow);object-fit:cover;background:#e6f4ea}
+    .brand h1{font-size:18px;line-height:1.1;margin:0}
+    .brand small{display:block;color:var(--muted);font-weight:500}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{padding:10px 12px;border-radius:12px;font-weight:500;color:var(--muted)}
+    nav a:hover{background:#f1f5f9;color:var(--ink)}
+    .cta{display:flex;gap:10px}
+    .btn{padding:10px 16px;border-radius:999px;font-weight:600;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:10px}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-outline{border:1px solid #d0d7de;background:#fff;color:var(--ink)}
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden}
+    .hero-wrap{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:80px 20px}
+    .hero h2{font-size:48px;line-height:1.1;margin:0 0 14px}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .hero .pill{display:inline-block;background:#e6f4ea;color:var(--brand);font-weight:600;padding:8px 14px;border-radius:999px;margin-bottom:14px}
+    .hero-card{background:var(--surface);padding:20px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+
+    /* Section generic */
+    section{padding:70px 20px}
+    .container{max-width:var(--maxw);margin:0 auto}
+    .section-title{font-size:30px;margin:0 0 10px}
+    .section-sub{color:var(--muted);margin:0 0 30px}
+    .grid{display:grid;gap:24px}
+
+    /* About */
+    .about{background:#ffffff}
+    .about-grid{grid-template-columns:1.2fr .8fr}
+    .about-card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+
+    /* Founder */
+    .founder{background:linear-gradient(180deg,#ffffff,#f3fbf6)}
+    .founder-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+    .founder-photo{border-radius:50%;width:280px;height:280px;object-fit:cover;box-shadow:var(--shadow);background:#e6f4ea}
+    .goal{background:#ffffff;border-left:6px solid var(--brand);padding:18px 18px;border-radius:12px;box-shadow:var(--shadow)}
+
+    /* Benefits */
+    .benefits{background:#fff}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+    .card h4{margin:8px 0}
+
+    /* Products */
+    .products{background:#ffffff}
+    .product-grid{grid-template-columns:repeat(4,1fr)}
+    .product{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+    .product .info{padding:14px}
+    .tag{display:inline-block;background:#eef6ff;color:var(--brand-2);font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px}
+
+    /* Process */
+    .process-step{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;background:var(--surface);padding:16px;border-radius:14px;box-shadow:var(--shadow)}
+    .step-num{width:48px;height:48px;border-radius:12px;background:#e6f4ea;color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* Testimonials */
+    .testimonials{background:linear-gradient(180deg,#f8fafc,#eef7ff)}
+    .quote{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:20px}
+
+    /* Gallery */
+    .gallery{background:#fff}
+    .gallery-grid{grid-template-columns:repeat(4,1fr)}
+    .gallery img{border-radius:16px;box-shadow:var(--shadow)}
+
+    /* FAQ */
+    .faq-item{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:18px}
+    .faq-item summary{cursor:pointer;font-weight:600}
+
+    /* Contact */
+    .contact{background:linear-gradient(180deg,#ffffff,#f6f9ff)}
+    .contact-grid{grid-template-columns:1fr 1fr}
+    form{display:grid;gap:12px}
+    input,textarea,select{padding:12px 14px;border:1px solid #dde1e6;border-radius:12px;font:inherit}
+    textarea{min-height:120px}
+    .map{border:0;border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+
+    /* Footer */
+    footer{background:#181a1f;color:#f0f3f6}
+    .footer-wrap{max-width:var(--maxw);margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+    .socials a{padding:8px 10px;border-radius:12px;background:#23262d;margin-left:8px}
+
+    /* Floating WhatsApp */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;border-radius:999px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center;font-weight:700}
+
+    /* Responsive */
+    @media (max-width: 1000px){
+      .hero-wrap{grid-template-columns:1fr}
+      .about-grid,.founder-wrap,.contact-grid{grid-template-columns:1fr}
+      .product-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery-grid{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 600px){
+      .hero h2{font-size:34px}
+      nav ul{display:none}
+      .product-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+      .cards{grid-template-columns:1fr}
+      .whatsapp{right:12px;bottom:12px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <img class="brand-logo" src="logo f.png" alt="Shakti Farms logo" />
+        <div>
+          <h1>Shakti Farms</h1>
+          <!--<small>Hydroponic · Pesticide‑Free · Hyderabad</small>-->
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!--
+      <div class="cta">
+        <a class="btn btn-outline" href="#contact">Visit Farm</a>
+        <a class="btn btn-primary" href="#order">Order Now</a>
+      </div> -->
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-wrap">
+      <div>
+        <span class="pill">Hydroponic · Fresh · Pesticide‑Free</span>
+        <h2>Healthy greens grown with water, science & care.</h2>
+        <p>We grow premium leafy greens and vegetables using modern hydroponics in Moinabad (Surangal), Hyderabad—clean, sustainable, and packed with nutrients.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#products">Explore Produce</a>
+          <a class="btn btn-outline" href="#about">Why Hydroponics?</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="automatic-transport-robot-transporting-plants-smart-robotic-farmers-concept.jpg" alt="Hydroponic farm – channels with lush greens" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3 class="section-title">About Shakti Farms</h3>
+      <p class="section-sub">A local hydroponic initiative to bring chemical‑free freshness to Hyderabad households.</p>
+      <div class="grid about-grid">
+        <div class="about-card">
+          <h4>What is Hydroponics?</h4>
+          <p>Hydroponics is soil‑less cultivation where plants grow in water enriched with precise nutrients. This allows clean, efficient, and faster growth with far less water compared to soil farming.</p>
+        </div>
+        <div class="about-card">
+          <h4>Why It Matters</h4>
+          <ul>
+            <li>Zero soil contaminants and no harmful pesticides</li>
+            <li>Year‑round, consistent harvests</li>
+            <li>Up to 90% less water usage</li>
+            <li>Traceable, transparent farm‑to‑home</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder & Aim -->
+  <section id="founder" class="founder">
+    <div class="container founder-wrap">
+      <div style="display:flex;justify-content:center">
+        <img class="founder-photo" src="IMG_7661.jpg" alt="Founder Aryan – Shakti Farms" />
+      </div>
+      <div>
+        <h3 class="section-title">Founder</h3>
+        <p class="section-sub">Aryan – Building a healthier plate for Hyderabad</p>
+        <div class="goal">
+          <strong>Our Aim:</strong>
+          <p style="margin:8px 0 0">To provide fresh, clean, and <b>pesticide‑free vegetables</b> grown through hydroponics—delivered quickly from our farm in Moinabad (Surangal) to your kitchen.</p>
+        </div>
+        <p style="margin-top:16px">Aryan started Shakti Farms to make nutrient‑dense produce accessible for families, restaurants, and health‑first communities while promoting sustainable, eco‑friendly farming.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits">
+    <div class="container">
+      <h3 class="section-title">Why Choose Us</h3>
+      <p class="section-sub">Cleaner produce, better taste, and a smaller footprint.</p>
+      <div class="cards">
+        <div class="card">
+          <h4>Zero Pesticides</h4>
+          <p>Safe for kids and elders—no harmful residues, ever.</p>
+        </div>
+        <div class="card">
+          <h4>Harvest on Order</h4>
+          <p>We harvest close to delivery time so you receive peak freshness.</p>
+        </div>
+        <div class="card">
+          <h4>Traceable & Transparent</h4>
+          <p>Know how and where your food is grown.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <div class="container">
+      <h3 class="section-title">Our Produce</h3>
+      <p class="section-sub">Leafy greens and vegetables grown with precision nutrition.</p>
+      <div class="grid product-grid">
+        <!-- Repeat product card as needed -->
+        <article class="product">
+          <img src="images/products/lettuce.jpg" alt="Butterhead Lettuce" />
+          <div class="info">
+            <div class="tag">Leafy Green</div>
+            <h4>Butterhead Lettuce</h4>
+            <p>Crisp, tender leaves perfect for salads and wraps.</p>
+          </div>
+        </article>
+        <article class="product">
+          <img src="images/products/spinach.jpg" alt="Spinach" />
+          <div class="info">
+            <div class="tag">Leafy Green</div>
+            <h4>Spinach</h4>
+            <p>Iron‑rich, fresh and clean. Ideal for smoothies and curries.</p>
+          </div>
+        </article>
+        <article class="product">
+          <img src="images/products/basil.jpg" alt="Basil" />
+          <div class="info">
+            <div class="tag">Herb</div>
+            <h4>Basil</h4>
+            <p>Fragrant herb for pasta, pesto, and salads.</p>
+          </div>
+        </article>
+        <article class="product">
+          <img src="images/products/tomato.jpg" alt="Tomato" />
+          <div class="info">
+            <div class="tag">Vegetable</div>
+            <h4>Tomatoes (Hydroponic)</h4>
+            <p>Sweet, juicy, and clean—excellent for salads and sauces.</p>
+          </div>
+        </article>
+      </div>
+
+      <div id="order" style="margin-top:28px" class="about-card">
+        <h4>Order & Subscription</h4>
+        <p>Home deliveries in and around Moinabad, Gandipet, Manikonda, and nearby Hyderabad areas. Weekly subscription plans available. WhatsApp us for today’s harvest list.</p>
+        <a class="btn btn-primary" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp Order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="process">
+    <div class="container">
+      <h3 class="section-title">How We Grow</h3>
+      <p class="section-sub">Pure water · Precise nutrients · Controlled environment</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div>
+            <h4>Seedling</h4>
+            <p>We germinate seeds in sterile media for strong, uniform growth.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div>
+            <h4>Nutrient Film Technique</h4>
+            <p>Plants are placed in NFT channels where roots receive balanced nutrients.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div>
+            <h4>Monitoring</h4>
+            <p>pH and EC are tracked daily for consistent quality and taste.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div>
+            <h4>Clean Harvest</h4>
+            <p>Harvested, rinsed, and packed hygienically—ready to eat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h3 class="section-title">What Our Customers Say</h3>
+      <p class="section-sub">Trusted by households and chefs</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr;">
+        <div class="quote">
+          <p>“The lettuce is unbelievably fresh and stays crisp for days. Love that it’s pesticide‑free!”</p>
+          <small>— Neha, Manikonda</small>
+        </div>
+        <div class="quote">
+          <p>“Perfect basil for our restaurant—consistent flavor and quality every week.”</p>
+          <small>— Chef Arjun, Gachibowli</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h3 class="section-title">Farm Gallery</h3>
+      <p class="section-sub">A peek into our clean, controlled environment</p>
+      <div class="grid gallery-grid">
+        <img src="images/gallery/1.jpg" alt="Seedling trays" />
+        <img src="images/gallery/2.jpg" alt="NFT channels" />
+        <img src="images/gallery/3.jpg" alt="Harvest day" />
+        <img src="images/gallery/4.jpg" alt="Packed produce" />
+        <img src="images/gallery/5.jpg" alt="Quality checks" />
+        <img src="images/gallery/6.jpg" alt="Healthy roots" />
+        <img src="images/gallery/7.jpg" alt="Greenhouse" />
+        <img src="images/gallery/8.jpg" alt="Boxed orders" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h3 class="section-title">FAQ</h3>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <details class="faq-item">
+          <summary>Do you use any pesticides?</summary>
+          <p>No. Our controlled hydroponic setup keeps pests minimal, and we never use harmful pesticides.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long does delivery take?</summary>
+          <p>Typically within 24 hours of harvest for nearby areas. WhatsApp us for today’s schedule.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is hydroponic produce as nutritious as soil‑grown?</summary>
+          <p>Yes. With precise nutrients and clean water, plants develop optimal taste and nutrition.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer farm visits?</summary>
+          <p>Yes. You can schedule a guided visit to see our setup in Moinabad.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3 class="section-title">Contact & Visit</h3>
+      <p class="section-sub">Shakti Farms, Moinabad (Surangal), Hyderabad</p>
+      <div class="grid contact-grid">
+        <form id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="tel" name="phone" placeholder="Phone / WhatsApp" required />
+          <input type="email" name="email" placeholder="Email (optional)" />
+          <select name="interest" required>
+            <option value="" disabled selected>Interested in…</option>
+            <option>Home Subscription</option>
+            <option>Restaurant Supply</option>
+            <option>One‑time Order</option>
+            <option>Farm Visit</option>
+          </select>
+          <textarea name="message" placeholder="Tell us your requirement…" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+          <p id="formMsg" style="color:var(--muted);margin:0"></p>
+        </form>
+        <div>
+          <div class="about-card" style="margin-bottom:16px">
+            <h4>Reach Us</h4>
+            <p><strong>Phone / WhatsApp:</strong> +91‑XXXXXXXXXX</p>
+            <p><strong>Email:</strong> hello@shaktifarms.in</p>
+            <p><strong>Timings:</strong> 8:00 AM – 6:00 PM (Mon‑Sat)</p>
+          </div>
+          <iframe class="map" title="Shakti Farms Location" width="100%" height="260" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.983!2d78.254!3d17.315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMoinabad!5e0!3m2!1sen!2sin!4v0000000000"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-wrap">
+      <div>
+        <strong>© <span id="year"></span> Shakti Farms</strong> · Hydroponic, pesticide‑free vegetables · Hyderabad
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/910000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <!-- Simple WA icon -->
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .1 5.37.1 12.02c0 2.12.56 4.17 1.62 5.98L0 24l6.16-1.62a11.92 11.92 0 0 0 5.9 1.57h.01c6.65 0 12.02-5.36 12.02-11.96a11.86 11.86 0 0 0-3.57-8.51ZM12.07 21.8h-.01a9.86 9.86 0 0 1-5.03-1.37l-.36-.22-3.65.96.98-3.56-.24-.37a9.77 9.77 0 0 1-1.51-5.25c0-5.43 4.43-9.86 9.86-9.86 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 0 1 2.88 6.98c0 5.43-4.43 9.86-9.86 9.86Zm5.42-7.38c-.3-.15-1.76-.86-2.03-.96-.27-.1-.46-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.78-1.5-1.73-1.68-2.02-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.59-.9-2.18-.24-.59-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49 0 1.46 1.08 2.88 1.23 3.08.15.2 2.13 3.26 5.17 4.58.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.56-.34Z" fill="currentColor"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form handler (no backend) – opens WhatsApp with prefilled text
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      if(!data.name || !data.phone || !data.interest || !data.message){
+        msg.textContent = 'Please fill all required fields.';
+        return;
+      }
+      const text = encodeURIComponent(`Hello Shakti Farms, I am ${data.name}.\nPhone: ${data.phone}\nInterest: ${data.interest}\nMessage: ${data.message}`);
+      window.open(`https://wa.me/910000000000?text=${text}`, '_blank');
+      msg.textContent = 'Opening WhatsApp…';
+      form.reset();
+    });
+  </script>
+
+  <!-- SEO: Local Business Schema (customize details later) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Shakti Farms",
+    "image": "https://example.com/images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Moinabad (Surangal)",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500075",
+      "addressCountry": "IN"
+    },
+    "url": "https://shaktifarms.in",
+    "telephone": "+91XXXXXXXXXX",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Sa 08:00-18:00"
+  }
+  </script>
+</body>
+</html>
