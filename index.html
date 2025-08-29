@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shakti Farms | Hydroponic, Pesticide‑Free Vegetables – Moinabad, Hyderabad</title>
-  <meta name="description" content="Shakti Farms is a hydroponic farm in Moinabad, Hyderabad delivering fresh, pesticide‑free vegetables and greens. Healthy produce, sustainable methods, and transparent farm‑to‑home." />
+  <title>Shakti Farms | Hydroponic, Pesticide-Free Vegetables – Moinabad, Hyderabad</title>
+  <meta name="description" content="Shakti Farms is a hydroponic farm in Moinabad, Hyderabad delivering fresh, pesticide-free vegetables and greens. Healthy produce, sustainable methods, and transparent farm-to-home." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,28 +14,45 @@
       --surface:#ffffff;
       --ink:#181a1f;
       --muted:#5b6068;
-      --brand:#2f9e44;          /* primary green */
-      --brand-2:#0077cc;        /* accent blue */
-      --accent:#25d366;         /* WhatsApp CTA */
+      --brand:#2f9e44;
+      --brand-2:#0077cc;
+      --accent:#25d366;
       --shadow:0 10px 30px rgba(0,0,0,.08);
       --radius:18px;
       --radius-lg:26px;
       --maxw:1200px;
+      --header-height:100px;
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:linear-gradient(180deg,#f8fafc, var(--bg));font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#f8fafc, var(--bg));
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+    }
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
 
     /* Header / Nav */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid #e9ecef}
-    .nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(6px);
+      border-bottom:1px solid #e9ecef;
+      height:var(--header-height);
+      display:flex;
+      align-items:center;
+    }
+    .nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;width:100%}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand-logo{width:100px;height:100px;border-radius:50px;box-shadow:var(--shadow);object-fit:cover;background:#e6f4ea}
+    .brand-logo{width:72px;height:72px;border-radius:50%;box-shadow:var(--shadow);object-fit:cover;background:#e6f4ea}
     .brand h1{font-size:18px;line-height:1.1;margin:0}
     .brand small{display:block;color:var(--muted);font-weight:500}
-    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;align-items:center}
     nav a{padding:10px 12px;border-radius:12px;font-weight:500;color:var(--muted)}
     nav a:hover{background:#f1f5f9;color:var(--ink)}
     .cta{display:flex;gap:10px}
@@ -63,10 +80,10 @@
     .about-grid{grid-template-columns:1.2fr .8fr}
     .about-card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
 
-    /* Founder */
+    /* Founders */
     .founder{background:linear-gradient(180deg,#ffffff,#f3fbf6)}
-    .founder-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
-    .founder-photo{border-radius:50%;width:280px;height:280px;object-fit:cover;box-shadow:var(--shadow);background:#e6f4ea}
+    .founder-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .founder-photo{border-radius:50%;width:220px;height:220px;object-fit:cover;box-shadow:var(--shadow);background:#e6f4ea;margin-bottom:16px;text-align:center}
     .goal{background:#ffffff;border-left:6px solid var(--brand);padding:18px 18px;border-radius:12px;box-shadow:var(--shadow)}
 
     /* Benefits */
@@ -83,8 +100,30 @@
     .tag{display:inline-block;background:#eef6ff;color:var(--brand-2);font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px}
 
     /* Process */
-    .process-step{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;background:var(--surface);padding:16px;border-radius:14px;box-shadow:var(--shadow)}
-    .step-num{width:48px;height:48px;border-radius:12px;background:#e6f4ea;color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700}
+    /* .process-step{display:flex;flex-direction:column;gap:10px;align-items:start;background:var(--surface);padding:16px;border-radius:14px;box-shadow:var(--shadow)}
+    .step-num{width:48px;height:48px;border-radius:12px;background:#e6f4ea;color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700} */
+
+    /* Process */
+.process-step {
+  background: var(--surface);
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.process-step h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  /* color: var(--brand); */
+}
+
+.step-num {
+  /* color: var(--brand); */
+  font-weight: 700;
+  margin-right: 6px;
+}
 
     /* Testimonials */
     .testimonials{background:linear-gradient(180deg,#f8fafc,#eef7ff)}
@@ -115,153 +154,65 @@
     /* Floating WhatsApp */
     .whatsapp{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;border-radius:999px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center;font-weight:700}
 
-    /* Hamburger base */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--ink);
-}
+    /* Hamburger */
+    .hamburger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:10px;}
+    .hamburger svg{width:22px;height:22px;stroke:var(--ink);}
 
-/* Mobile nav overlay */
-.mobile-nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  border-top: 1px solid #e9ecef;
-  box-shadow: var(--shadow);
-}
+    /* Mobile nav fullscreen overlay (right slide) */
+    .mobile-nav {position: fixed;top: 0;right: 0;width: 82%;max-width: 340px;height: 100%;background: #fff;z-index: 1200;padding-top: var(--header-height);transform: translateX(100%);transition: transform 0.28s ease;box-shadow: -8px 0 24px rgba(0,0,0,.12);}
+    .mobile-nav.open { transform: translateX(0); }
+    .mobile-nav .close-btn {position:absolute;top:12px;right:12px;background:none;border:0;font-size:26px;cursor:pointer;padding:8px;}
+    .mobile-nav ul { list-style:none;margin:0;padding:20px;display:flex;flex-direction:column;gap:10px; }
+    .mobile-nav a { display:block;padding:12px 14px;font-weight:600;font-size:16px;color:var(--ink);border-radius:8px }
+    .mobile-nav a:hover { background:#f1f5f9 }
 
-.mobile-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+    /* Overlay behind menu */
+    #overlay {position: fixed;inset: 0;background: rgba(0,0,0,0.36);z-index: 1100;display: none;}
+    #overlay.show { display:block }
 
-.mobile-nav a {
-  display: block;
-  padding: 12px 20px;
-  font-weight: 500;
-  color: var(--ink);
-}
+    /* Show hamburger on mobile and hide desktop nav */
+    @media (max-width: 900px){
+      nav ul { display: none; }
+      .hamburger { display: flex; }
+    }
 
-.mobile-nav a:hover {
-  background: #f1f5f9;
-}
-
-/* Show hamburger on mobile */
-@media (max-width: 600px){
-  nav ul { display: none; }
-  .hamburger { display: block; }
-}
-
-    /* Responsive */
+    /* Responsive tweaks */
     @media (max-width: 1000px){
       .hero-wrap{grid-template-columns:1fr}
       .about-grid,.founder-wrap,.contact-grid{grid-template-columns:1fr}
-      .product-grid{grid-template-columns:repeat(2,1fr)}
+      .product-grid{grid-template-columns:repeat(1,1fr)}
       .gallery-grid{grid-template-columns:repeat(3,1fr)}
-      .cards{grid-template-columns:repeat(2,1fr)}
+      .cards{grid-template-columns:repeat(1,1fr)}
+      .brand-logo{width:60px;height:60px}
     }
     @media (max-width: 600px){
-  body {
-    font-size: 15px;
-  }
-
-  .hero h2 {
-    font-size: 26px;
-    line-height: 1.2;
-  }
-
-  .section-title {
-    font-size: 22px;
-  }
-
-  .section-sub {
-    font-size: 14px;
-  }
-
-  /* Navigation */
-  nav ul {
-    display: none;
-  }
-
-  /* Layouts collapse */
-  .hero-wrap,
-  .about-grid,
-  .founder-wrap,
-  .contact-grid,
-  .cards,
-  .product-grid,
-  .gallery-grid,
-  .grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Reduce paddings */
-  section {
-    padding: 40px 16px;
-  }
-
-  .hero-wrap {
-    padding: 50px 16px;
-  }
-
-  /* Images scale better */
-  .founder-photo {
-    width: 180px;
-    height: 180px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* WhatsApp button */
-  .whatsapp {
-    right: 12px;
-    bottom: 12px;
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-
-  .btn {
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-}
-
+      body { font-size:15px }
+      .hero h2 { font-size:26px;line-height:1.2 }
+      .section-title { font-size:22px }
+      .section-sub { font-size:14px }
+      section { padding:40px 16px }
+      .hero-wrap { padding:50px 16px }
+      .founder-photo { width:180px;height:180px }
+      .gallery img { height:auto }
+      .whatsapp { right:12px;bottom:12px;padding:10px 14px;font-size:14px }
+      .btn { padding:10px 14px;font-size:10px }
+      .mobile-nav { width:100%; max-width:none }
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="nav">
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        ☰
-      </button>
-      
       <div class="brand">
         <img class="brand-logo" src="logo f.png" alt="Shakti Farms logo" />
-        <div>
-          <h1>Shakti Farms</h1>
-          <!--<small>Hydroponic · Pesticide‑Free · Hyderabad</small>-->
-        </div>
+        <div><h1>Shakti Farms</h1></div>
       </div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#founder">Founder</a></li>
+          <li><a href="#founder">Founders</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#gallery">Gallery</a></li>
@@ -269,19 +220,33 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!--
-      <div class="cta">
-        <a class="btn btn-outline" href="#contact">Visit Farm</a>
-        <a class="btn btn-primary" href="#order">Order Now</a>
-      </div> -->
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor"/></svg>
+      </button>
     </div>
   </header>
 
+  <!-- Overlay + Mobile Nav -->
+  <div id="overlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="close-btn" id="mobileClose" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#founder">Founders</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero -->
-  <section id="home" class="hero">
+  <section id="home" class="hero" style="padding-top: calc(var(--header-height) - 80px);">
     <div class="hero-wrap">
       <div>
-        <span class="pill">Hydroponic · Fresh · Pesticide‑Free</span>
+        <span class="pill">Hydroponic · Fresh · Pesticide-Free</span>
         <h2>Healthy greens grown with water, science & care.</h2>
         <p>We grow premium leafy greens and vegetables using modern hydroponics in Moinabad (Surangal), Hyderabad—clean, sustainable, and packed with nutrients.</p>
         <div class="cta">
@@ -290,7 +255,7 @@
         </div>
       </div>
       <div class="hero-card">
-        <img src="automatic-transport-robot-transporting-plants-smart-robotic-farmers-concept.jpg" alt="Hydroponic farm – channels with lush greens" />
+        <img src="automatic-transport-robot-transporting-plants-smart-robotic-farmers-concept.jpg" alt="Hydroponic farm" />
       </div>
     </div>
   </section>
@@ -299,39 +264,44 @@
   <section id="about" class="about">
     <div class="container">
       <h3 class="section-title">About Shakti Farms</h3>
-      <p class="section-sub">A local hydroponic initiative to bring chemical‑free freshness to Hyderabad households.</p>
+      <p class="section-sub">A local hydroponic initiative to bring chemical-free freshness to Hyderabad households.</p>
       <div class="grid about-grid">
         <div class="about-card">
           <h4>What is Hydroponics?</h4>
-          <p>Hydroponics is soil‑less cultivation where plants grow in water enriched with precise nutrients. This allows clean, efficient, and faster growth with far less water compared to soil farming.</p>
+          <p>Hydroponics is soil-less cultivation where plants grow in water enriched with precise nutrients. This allows clean, efficient, and faster growth with far less water compared to soil farming.</p>
         </div>
         <div class="about-card">
           <h4>Why It Matters</h4>
           <ul>
             <li>Zero soil contaminants and no harmful pesticides</li>
-            <li>Year‑round, consistent harvests</li>
+            <li>Year-round, consistent harvests</li>
             <li>Up to 90% less water usage</li>
-            <li>Traceable, transparent farm‑to‑home</li>
+            <li>Traceable, transparent farm-to-home</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Founder & Aim -->
+  <!-- Founders -->
   <section id="founder" class="founder">
-    <div class="container founder-wrap">
-      <div style="display:flex;justify-content:center">
-        <img class="founder-photo" src="IMG_7661.jpg" alt="Founder Aryan – Shakti Farms" />
-      </div>
-      <div>
-        <h3 class="section-title">Founder</h3>
-        <p class="section-sub">Aryan – Building a healthier plate for Hyderabad</p>
-        <div class="goal">
-          <strong>Our Aim:</strong>
-          <p style="margin:8px 0 0">To provide fresh, clean, and <b>pesticide‑free vegetables</b> grown through hydroponics—delivered quickly from our farm in Moinabad (Surangal) to your kitchen.</p>
+    <div class="container">
+      <h3 class="section-title">Our Founders</h3>
+      <div class="founder-wrap">
+        <div style="text-align:center;justify-items: center;">
+          <img class="founder-photo" src="IMG_7661.jpg" alt="Founder Aryan Janjirala" />
+          <h4>Aryan Janjirala</h4>
+          <p>Aryan started Shakti Farms to make nutrient-dense produce accessible for families, restaurants, and health-first communities while promoting sustainable, eco-friendly farming.</p>
         </div>
-        <p style="margin-top:16px">Aryan started Shakti Farms to make nutrient‑dense produce accessible for families, restaurants, and health‑first communities while promoting sustainable, eco‑friendly farming.</p>
+        <div style="text-align:center;justify-items: center;">
+          <img class="founder-photo" src="IMG_7662.JPG" alt="Founder Tejaswi Kandukuri" />
+          <h4>Tejaswi Kandukuri</h4>
+          <p>Tejaswi is passionate about delivering safe, pesticide-free leafy greens to every household and scaling sustainable agriculture for a healthier future.</p>
+        </div>
+      </div>
+      <div class="goal" style="margin-top:30px">
+        <strong>Our Aim:</strong>
+        <p style="margin:8px 0 0">To provide fresh, clean, and <b>pesticide-free vegetables</b> grown through hydroponics—delivered quickly from our farm in Moinabad (Surangal) to your kitchen.</p>
       </div>
     </div>
   </section>
@@ -364,7 +334,6 @@
       <h3 class="section-title">Our Produce</h3>
       <p class="section-sub">Leafy greens and vegetables grown with precision nutrition.</p>
       <div class="grid product-grid">
-        <!-- Repeat product card as needed -->
         <article class="product">
           <img src="images/products/lettuce.jpg" alt="Butterhead Lettuce" />
           <div class="info">
@@ -378,7 +347,7 @@
           <div class="info">
             <div class="tag">Leafy Green</div>
             <h4>Spinach</h4>
-            <p>Iron‑rich, fresh and clean. Ideal for smoothies and curries.</p>
+            <p>Iron-rich, fresh and clean. Ideal for smoothies and curries.</p>
           </div>
         </article>
         <article class="product">
@@ -402,7 +371,7 @@
       <div id="order" style="margin-top:28px" class="about-card">
         <h4>Order & Subscription</h4>
         <p>Home deliveries in and around Moinabad, Gandipet, Manikonda, and nearby Hyderabad areas. Weekly subscription plans available. WhatsApp us for today’s harvest list.</p>
-        <a class="btn btn-primary" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp Order</a>
+        <a class="btn btn-primary" href="https://wa.me/918106662341" target="_blank" rel="noopener">WhatsApp Order</a>
       </div>
     </div>
   </section>
@@ -412,47 +381,41 @@
     <div class="container">
       <h3 class="section-title">How We Grow</h3>
       <p class="section-sub">Pure water · Precise nutrients · Controlled environment</p>
-      <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="grid" style="grid-template-columns:1fr">
+  
         <div class="process-step">
-          <div class="step-num">1</div>
-          <div>
-            <h4>Seedling</h4>
-            <p>We germinate seeds in sterile media for strong, uniform growth.</p>
-          </div>
+          <h4><span class="step-num">1.</span> Seedling</h4>
+          <p>We germinate seeds in sterile media for strong, uniform growth.</p>
         </div>
+  
         <div class="process-step">
-          <div class="step-num">2</div>
-          <div>
-            <h4>Nutrient Film Technique</h4>
-            <p>Plants are placed in NFT channels where roots receive balanced nutrients.</p>
-          </div>
+          <h4><span class="step-num">2.</span> Nutrient Film Technique</h4>
+          <p>Plants are placed in NFT channels where roots receive balanced nutrients.</p>
         </div>
+  
         <div class="process-step">
-          <div class="step-num">3</div>
-          <div>
-            <h4>Monitoring</h4>
-            <p>pH and EC are tracked daily for consistent quality and taste.</p>
-          </div>
+          <h4><span class="step-num">3.</span> Monitoring</h4>
+          <p>pH and EC are tracked daily for consistent quality and taste.</p>
         </div>
+  
         <div class="process-step">
-          <div class="step-num">4</div>
-          <div>
-            <h4>Clean Harvest</h4>
-            <p>Harvested, rinsed, and packed hygienically—ready to eat.</p>
-          </div>
+          <h4><span class="step-num">4.</span> Clean Harvest</h4>
+          <p>Harvested, rinsed, and packed hygienically—ready to eat.</p>
         </div>
+  
       </div>
     </div>
   </section>
+  
 
   <!-- Testimonials -->
   <section class="testimonials">
     <div class="container">
       <h3 class="section-title">What Our Customers Say</h3>
       <p class="section-sub">Trusted by households and chefs</p>
-      <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <div class="grid" style="grid-template-columns:1fr;">
         <div class="quote">
-          <p>“The lettuce is unbelievably fresh and stays crisp for days. Love that it’s pesticide‑free!”</p>
+          <p>“The lettuce is unbelievably fresh and stays crisp for days. Love that it’s pesticide-free!”</p>
           <small>— Neha, Manikonda</small>
         </div>
         <div class="quote">
@@ -485,7 +448,7 @@
   <section id="faq" class="faq">
     <div class="container">
       <h3 class="section-title">FAQ</h3>
-      <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="grid" style="grid-template-columns:1fr">
         <details class="faq-item">
           <summary>Do you use any pesticides?</summary>
           <p>No. Our controlled hydroponic setup keeps pests minimal, and we never use harmful pesticides.</p>
@@ -495,7 +458,7 @@
           <p>Typically within 24 hours of harvest for nearby areas. WhatsApp us for today’s schedule.</p>
         </details>
         <details class="faq-item">
-          <summary>Is hydroponic produce as nutritious as soil‑grown?</summary>
+          <summary>Is hydroponic produce as nutritious as soil-grown?</summary>
           <p>Yes. With precise nutrients and clean water, plants develop optimal taste and nutrition.</p>
         </details>
         <details class="faq-item">
@@ -520,7 +483,7 @@
             <option value="" disabled selected>Interested in…</option>
             <option>Home Subscription</option>
             <option>Restaurant Supply</option>
-            <option>One‑time Order</option>
+            <option>One-time Order</option>
             <option>Farm Visit</option>
           </select>
           <textarea name="message" placeholder="Tell us your requirement…" required></textarea>
@@ -530,9 +493,9 @@
         <div>
           <div class="about-card" style="margin-bottom:16px">
             <h4>Reach Us</h4>
-            <p><strong>Phone / WhatsApp:</strong> +91‑8106662341</p>
+            <p><strong>Phone / WhatsApp:</strong> +91-8106662341</p>
             <p><strong>Email:</strong> shakti.firms@gmail.com</p>
-            <p><strong>Timings:</strong> 8:00 AM – 6:00 PM (Mon‑Sat)</p>
+            <p><strong>Timings:</strong> 8:00 AM – 6:00 PM (Mon-Sat)</p>
           </div>
           <iframe class="map" title="Shakti Farms Location" width="100%" height="260" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.983!2d78.254!3d17.315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMoinabad!5e0!3m2!1sen!2sin!4v0000000000"></iframe>
         </div>
@@ -544,7 +507,7 @@
   <footer>
     <div class="footer-wrap">
       <div>
-        <strong>© <span id="year"></span> Shakti Farms</strong> · Hydroponic, pesticide‑free vegetables · Hyderabad
+        <strong>© <span id="year"></span> Shakti Farms</strong> · Hydroponic, pesticide-free vegetables · Hyderabad
       </div>
       <div class="socials">
         <a href="#" aria-label="Instagram">IG</a>
@@ -555,35 +518,93 @@
   </footer>
 
   <a class="whatsapp" href="https://wa.me/918106662341" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <!-- Simple WA icon -->
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .1 5.37.1 12.02c0 2.12.56 4.17 1.62 5.98L0 24l6.16-1.62a11.92 11.92 0 0 0 5.9 1.57h.01c6.65 0 12.02-5.36 12.02-11.96a11.86 11.86 0 0 0-3.57-8.51ZM12.07 21.8h-.01a9.86 9.86 0 0 1-5.03-1.37l-.36-.22-3.65.96.98-3.56-.24-.37a9.77 9.77 0 0 1-1.51-5.25c0-5.43 4.43-9.86 9.86-9.86 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 0 1 2.88 6.98c0 5.43-4.43 9.86-9.86 9.86Zm5.42-7.38c-.3-.15-1.76-.86-2.03-.96-.27-.1-.46-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.78-1.5-1.73-1.68-2.02-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.59-.9-2.18-.24-.59-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49 0 1.46 1.08 2.88 1.23 3.08.15.2 2.13 3.26 5.17 4.58.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.56-.34Z" fill="currentColor"/>
     </svg>
     WhatsApp
   </a>
 
+  <!-- Scripts (single combined block; uses var, no const) -->
   <script>
-    // Year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    /* --- Mobile menu toggle + overlay --- */
+    var hamburger = document.getElementById("hamburger");
+    var mobileNav = document.getElementById("mobileNav");
+    var mobileClose = document.getElementById("mobileClose");
+    var overlay = document.getElementById("overlay");
 
-    // Simple form handler (no backend) – opens WhatsApp with prefilled text
-    const form = document.getElementById('contactForm');
-    const msg = document.getElementById('formMsg');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(form).entries());
-      if(!data.name || !data.phone || !data.interest || !data.message){
-        msg.textContent = 'Please fill all required fields.';
-        return;
-      }
-      const text = encodeURIComponent(`Hello Shakti Farms, I am ${data.name}.\nPhone: ${data.phone}\nInterest: ${data.interest}\nMessage: ${data.message}`);
-      window.open(`https://wa.me/910000000000?text=${text}`, '_blank');
-      msg.textContent = 'Opening WhatsApp…';
-      form.reset();
-    });
+    function openMenu() {
+      mobileNav.classList.add("open");
+      mobileNav.setAttribute("aria-hidden","false");
+      overlay.classList.add("show");
+      document.body.style.overflow = "hidden";
+      hamburger.setAttribute("aria-expanded","true");
+    }
+    function closeMenu() {
+      mobileNav.classList.remove("open");
+      mobileNav.setAttribute("aria-hidden","true");
+      overlay.classList.remove("show");
+      document.body.style.overflow = "";
+      hamburger.setAttribute("aria-expanded","false");
+    }
+
+    if (hamburger) {
+      hamburger.addEventListener("click", function () {
+        if (mobileNav.classList.contains("open")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+    }
+    if (mobileClose) {
+      mobileClose.addEventListener("click", function () { closeMenu(); });
+    }
+    overlay.addEventListener("click", function () { closeMenu(); });
+
+    // close mobile menu when tapping any mobile link
+    var mobileLinks = document.querySelectorAll(".mobile-nav a");
+    for (var i = 0; i < mobileLinks.length; i++) {
+      mobileLinks[i].addEventListener("click", function () { closeMenu(); });
+    }
+
+    /* --- Year in footer --- */
+    var yearEl = document.getElementById("year");
+    if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+    /* --- Contact form handler (opens WhatsApp) --- */
+    var form = document.getElementById('contactForm');
+    var msg = document.getElementById('formMsg');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var name = fd.get('name') || '';
+        var phone = fd.get('phone') || '';
+        var interest = fd.get('interest') || '';
+        var message = fd.get('message') || '';
+
+        if (!name || !phone || !interest || !message) {
+          if (msg) { msg.textContent = 'Please fill all required fields.'; }
+          return;
+        }
+
+        var text = encodeURIComponent(
+          'Hello Shakti Farms, I am ' + name + '.\n' +
+          'Phone: ' + phone + '\n' +
+          'Interest: ' + interest + '\n' +
+          'Message: ' + message
+        );
+
+        // use the team's WhatsApp number
+        var waNumber = '918106662341';
+        window.open('https://wa.me/' + waNumber + '?text=' + text, '_blank');
+        if (msg) { msg.textContent = 'Opening WhatsApp…'; }
+        form.reset();
+      });
+    }
   </script>
 
-  <!-- SEO: Local Business Schema (customize details later) -->
+  <!-- SEO: Local Business Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -592,7 +613,7 @@
     "image": "https://example.com/images/hero.jpg",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Moinabad (Surangal)",
+      "streetAddress": "Moinabad (Surungal)",
       "addressLocality": "Hyderabad",
       "addressRegion": "Telangana",
       "postalCode": "500075",
