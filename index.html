@@ -57,7 +57,7 @@
     nav a:hover{background:#f1f5f9;color:var(--ink)}
     .cta{display:flex;gap:10px}
     .btn{padding:10px 16px;border-radius:999px;font-weight:600;box-shadow:var(--shadow);display:inline-flex;align-items:center;gap:10px}
-    .btn-primary{background:var(--brand);color:#fff}
+    .btn-primary{background:var(--brand);color:#fff;justify-content: center};
     .btn-outline{border:1px solid #d0d7de;background:#fff;color:var(--ink)}
 
     /* Hero */
@@ -65,7 +65,7 @@
     .hero-wrap{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:80px 20px}
     .hero h2{font-size:48px;line-height:1.1;margin:0 0 14px}
     .hero p{color:var(--muted);margin:0 0 22px}
-    .hero .pill{display:inline-block;background:#e6f4ea;color:var(--brand);font-weight:600;padding:8px 14px;border-radius:999px;margin-bottom:14px}
+    .hero .pill{display:inline-block;background:#e6f4ea;color:var(--brand);font-weight:600;padding:8px 14px;border-radius:999px;margin-bottom:14px;font-size:13px;}
     .hero-card{background:var(--surface);padding:20px;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
 
     /* Section generic */
@@ -289,12 +289,12 @@
       <h3 class="section-title">Our Founders</h3>
       <div class="founder-wrap">
         <div style="text-align:center;justify-items: center;">
-          <img class="founder-photo" src="aryan.jpg" alt="Founder Aryan Janjirala" />
+          <img class="founder-photo" src="aryan" alt="Founder Aryan Janjirala" />
           <h4>Aryan Janjirala</h4>
           <p>Aryan started Shakti Farms to make nutrient-dense produce accessible for families, restaurants, and health-first communities while promoting sustainable, eco-friendly farming.</p>
         </div>
         <div style="text-align:center;justify-items: center;">
-          <img class="founder-photo" src="tejaswi.jpg" alt="Founder Tejaswi Kandukuri" />
+          <img class="founder-photo" src="tejaswi" alt="Founder Tejaswi Kandukuri" />
           <h4>Tejaswi Kandukuri</h4>
           <p>Tejaswi is passionate about delivering safe, pesticide-free leafy greens to every household and scaling sustainable agriculture for a healthier future.</p>
         </div>
@@ -596,7 +596,7 @@
         );
 
         // use the team's WhatsApp number
-        var waNumber = '918106662341';
+        var waNumber = '+91 8106662341';
         window.open('https://wa.me/' + waNumber + '?text=' + text, '_blank');
         if (msg) { msg.textContent = 'Opening WhatsApp…'; }
         form.reset();
@@ -619,8 +619,8 @@
       "postalCode": "500075",
       "addressCountry": "IN"
     },
-    "url": "https://shaktifarms.in",
-    "telephone": "+91XXXXXXXXXX",
+    "url": "shakti.firms@gmail.com",
+    "telephone": "+918106662341",
     "priceRange": "₹₹",
     "openingHours": "Mo-Sa 08:00-18:00"
   }
